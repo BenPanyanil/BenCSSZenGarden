@@ -1,0 +1,343 @@
+/*
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+*/
+
+:root {
+    --main-blue: #181f4a;
+    --main-black: #1f1f1f;
+    --link-orange: #f07849;
+}
+
+*{
+    color: var(--main-black);
+}
+
+
+
+
+
+
+/*-------------------------------------------------*/
+/*Here it some universal CSS values*/
+
+h3 {
+    color: var(--main-blue);
+    font-family: 'Roboto Mono', monospace;
+    margin: 60px 0 30px 0;
+} 
+
+p {
+    color: var(--main-black);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6em;
+    font-weight: 100;
+    opacity: 0.7;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    color: var(--link-orange);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+/*-------------------------------------------------*/
+/*HambugerNav Animation CSS*/
+
+
+.icon {
+    position: absolute;
+    top: 40px;
+    right: 0px;
+    transform: translate(-50%,-50%);
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.hamburger {
+    width: 45px;
+    height: 6px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 6px;
+    background: var(--main-blue);
+    
+    transition: .3s;
+}
+
+.hamburger:before {
+    top: -9px;
+}
+
+.hamburger:after {
+    top: 9px;
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    width: 40px;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    width: 40px;
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+/*-------------------------------------------------*/
+/*This is the main body and wrapper*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper {
+    padding: 20px;
+}
+
+
+
+
+
+/*-------------------------------------------------*/
+/*the first row before bgi*/
+
+
+.download {
+    display: block;
+    margin: 80px 20px 20px 20px;
+}
+
+.downloadLogo {
+    background-image: url(../Images/headerIcon.svg);
+    background-repeat: no-repeat;
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    box-sizing: border-box;
+    
+    
+}
+
+.download p {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 100;
+    width: 60vw;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.download p a {
+    color: var(--link-orange);
+    text-decoration: none;
+}
+
+
+.headerImg {
+    background-image: url(../Images/artsyBg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    opacity: 0.9;
+
+}
+
+
+
+
+
+/*-------------------------------------------------*/
+/*This is the header*/
+
+
+h1 { 
+    color: var(--main-blue);
+    font-size: 3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 15px 0;
+    font-weight: bolder;
+}
+
+.linebreak {
+    height: 1px;
+    width: 100%;
+    background-color: var(--link-orange);
+}
+
+
+
+
+
+
+/*-------------------------------------------------*/
+/*Here starts the summary*/
+
+
+h2 {
+    color: var(--main-black);
+    font-family: 'Roboto Mono', monospace; 
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 10px 0 0 0;
+}
+
+.summary p {
+    margin: 0 0 40px 0;
+}
+
+
+hr {
+    opacity: 0.4;
+}
+
+
+
+
+/*-------------------------------------------------*/
+/*Second IMG*/
+
+.bottomImgContainer {
+    height: 20vh;
+    margin: 3.5em 0;
+}
+
+.bottomImg {
+    position: absolute;
+    background-image: url(../Images/artsyBg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 20vh;
+    width: 100vw;
+    left: 0;
+    
+    opacity: 0.9;
+}
+
+
+.daveSheaText {
+    font-family: 'Roboto Mono', monospace;
+    margin: 60px 20px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    
+}
+
+
+/*-------------------------------------------------*/
+/*Here are the footer Icons in this page*/
+
+footer {
+    position: absolute;
+    left: 0;
+    background-color: var(--main-blue);
+    width: 100vw;
+    padding: 30px 0;
+    text-align: center;
+    
+}
+
+
+footer i {
+    color: white;
+    font-size: 3rem;
+    margin: 10px 30px;
+}
+
+
+.footerline {
+    margin: 30px 0 0 0;
+}
+
+
+
+
+
+
+/*-------------------------------------------------*/
+/*Footercontent after the icons*/
+
+.zen-resources {
+    text-align: left;
+    margin: 0 20px;
+}
+
+.zen-resources h3 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin: 40px 20px 20px 20px;
+}
+
+.zen-resources ul {
+    list-style: none;
+}
+
+.zen-resources ul li::before {
+    content: "\2022";
+    color: white;
+    margin-left: -10px;
+    padding-right: 10px;
+}
+
+
+
+.zen-resources li {
+    margin: 15px;
+}
+
+.zen-resources li a {
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.zen-resources li abbr {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--link-orange);
+}
+
+
+
+
+
+
+
+/*-------------------------------------------------*/
+/*Meadia queries*/
+
+@media only screen and (max-width: 536px) {
+  footer {
+    text-align: left;
+  }
+}
