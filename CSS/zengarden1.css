@@ -64,6 +64,7 @@ a {
     height: 50px;
     cursor: pointer;
     background: transparent;
+    z-index: 4;
 }
 
 .hamburger {
@@ -107,6 +108,100 @@ a {
     width: 40px;
     transform: rotate(-45deg);
 }
+
+
+
+
+
+
+/*----------------------------------------------------*/
+/*Collapsed sidepanel*/
+
+.sidepanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    
+    background-color: rgba(0,0,0,0.0);
+    transition: .2s;
+}
+
+.sidepanel.active {
+    background-color: rgba(0,0,0,0.7);
+}
+
+
+
+
+
+/*------------------------------------------------------*/
+/*Collapsed Side Menu*/
+
+.sidemenu {
+    position: fixed;
+    top: 0;
+    right: -80vw;
+    width: 80vw;
+    height: 100vh;
+    
+    overflow: scroll;
+    
+    z-index: 3;
+    background-color: white;
+    
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+.sidemenu h3 {
+    padding-left: 10vw;
+    padding-top: 15px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    
+}
+
+.sidemenu ul {
+    padding-left: 10vw;
+    list-style: none;
+}
+
+.sidemenu ul li  {
+    margin: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.6em
+}
+
+.sidemenu ul li a {
+    color: var(--main-blue);
+}
+
+.sidemenu ul li a:first-child {
+    
+    font-family: 'Roboto Mono', monospace;
+    color: var(--link-orange);
+    font-style: normal;
+    font-size: 1.1rem;
+    
+}
+
+
+/*--------------------------------------------*/
+/*Open Sidemenu*/
+
+.sidemenu.active {
+    right: 0;
+}
+
+
+
 
 
 
@@ -168,6 +263,7 @@ body {
     background-position: center;
     background-size: cover;
     height: 25vh;
+    max-height: 240px;
     opacity: 0.9;
 
 }
@@ -229,6 +325,7 @@ hr {
 
 .bottomImgContainer {
     height: 20vh;
+    max-height: 160px;
     margin: 3.5em 0;
 }
 
@@ -238,6 +335,7 @@ hr {
     background-position: bottom;
     background-size: cover;
     height: 20vh;
+    max-height: 160px;
     width: 100vw;
     left: 0;
     
