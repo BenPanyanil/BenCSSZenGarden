@@ -31,7 +31,7 @@ h3 {
 p {
     color: var(--main-black);
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.6em;
     font-weight: 100;
     opacity: 0.7;
@@ -228,7 +228,6 @@ body {
 
 
 .download {
-    display: block;
     margin: 80px 20px 20px 20px;
 }
 
@@ -239,7 +238,7 @@ body {
     width: 2rem;
     display: inline-block;
     box-sizing: border-box;
-    
+    margin-left: 
     
 }
 
@@ -247,8 +246,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.9rem;
     font-weight: 100;
-    width: 60vw;
-    margin: 0 15px;
+    margin: 5px 0 0 0;
     display: inline-block;
 }
 
@@ -281,8 +279,8 @@ h1 {
     font-size: 3rem;
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
-    padding: 15px 0;
-    font-weight: 700;
+    padding: 0.5em 0;
+    font-weight: bolder;
 }
 
 .linebreak {
@@ -305,7 +303,6 @@ h2 {
     font-family: 'Roboto Mono', monospace; 
     font-size: 1.2rem;
     font-weight: 100;
-    padding: 10px 0 0 0;
 }
 
 .summary p {
@@ -439,3 +436,201 @@ footer i {
     text-align: left;
   }
 }
+
+
+
+
+
+/*-------------------------------------------------------*/
+/*For desktop*/
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------*/
+/*For desktop*/
+
+@media only screen and (min-width: 1000px) {
+    
+    
+    
+/*    -------------------------------------*/
+/*    Naigation and download Desktop    */
+    .sidepanel {
+        display: none;
+    }
+    
+    .icon {
+        display: none;
+    }
+    
+    .download {
+        margin: 4em;
+    }
+    
+    .downloadLogo {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    .download p {
+        font-size: 1rem;
+        margin-left: 15px;
+    }
+ 
+    .headerImg {
+
+        height: 50vh;
+        max-height: 50vh
+
+    }
+   
+    
+/*    -----------------------------------------*/
+/*    Content 1920 HD desktop*/
+    
+    .page-wrapper {
+        width: 60%;
+    }
+
+    
+    h1 {
+        font-size: 8rem;
+        padding: 0 0 0.5em 0;
+        margin-left: 10vw;
+    }
+    
+    .linebreak {
+        width: 30%;
+        margin-left: 10vw;
+    }
+    
+    
+    .summary hr {
+        display: none;
+    }
+    
+    .summary {
+        position: absolute;
+        top: 60vh;
+        right: 5vw;
+        background-color: white;
+        padding: 50px;
+        width: 27%;
+    }
+    
+    .summary h2 {
+        font-size: 1.6rem;
+        margin:  0 8% 40px 8%;
+    }
+    
+    .summary p {
+        margin:  0 8% 0 8%;
+    }
+    
+    h3,p {
+        margin: 0 0 2rem 10vw;
+    }
+    
+    h3 {
+        font-size: 2.2rem;
+        padding-top: 3rem;
+    }
+    
+    
+    
+    .daveSheaText p {
+        margin: 0;
+        padding: 0;
+        font-size: 1.6rem;
+        font-family: 'Roboto Mono', monospace;
+        margin-left: 10vw;
+    }
+
+    .zen-resources {
+        margin-left: 10vw;
+    }
+     
+/*    --------------------------------------------------*/
+/*    Design works menu*/
+
+
+    .sidemenu {
+        position: unset;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 93vh;
+        width: 20vw;
+        height: unset;
+
+        overflow: hidden;
+        border: 2px solid rgb(91, 92, 143);
+
+        transition: unset;
+        transition-delay: unset;
+    }
+
+    .sidemenu h3 {
+        margin: 0;
+        color: white;
+        padding: 5% 10%;
+        background-color: rgb(91, 92, 143);
+    
+    }
+
+    .sidemenu ul {
+        padding-left: 10%;
+    }
+
+}
+
+/*    -----------------------------------------*/
+/*    Content 2560 iMac desktop*/
+    
+@media only screen and (min-width: 1980px) {    
+    
+    .page-wrapper {
+        width: 50%;
+    }
+
+    .summary {
+        position: absolute;
+        top: 53vh;
+        right: 12vw;
+    }
+    
+    .summary h2 {
+        font-size: 2.8rem;
+        margin:  0 8% 40px 8%;
+    }
+    
+    h1,h3,p,.linebreak {
+        
+        margin-left: 15vw;
+        
+    }
+    
+    .sidemenu {
+        margin-right: 12vw;
+    }
+    
+    .download {
+        margin: 80px 10vw 20px 10vw;
+    }
+    
+    .sidemenu {
+        margin-top: 80vh;
+    }
+    
+    .daveSheaText p {
+        margin-left: 15vw;
+    }
+}
+    
+    
+    
+    
