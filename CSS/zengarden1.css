@@ -20,7 +20,12 @@ font-family: 'Montserrat', sans-serif;
 
 
 /*-------------------------------------------------*/
-/*Here it some universal CSS values*/
+/*Global CSS values*/
+
+body, html {
+    box-sixing: border-box;
+    overflow-x: hidden;
+}
 
 h3 {
     color: var(--main-blue);
